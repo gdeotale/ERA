@@ -1,10 +1,13 @@
 Following contains code from parts of assignment5
 
-!model.py contains model architecture that is used to train model.(Please note that this is very generic architecture kept very simple for inital assignments)
+## model.py 
+contains model architecture that is used to train model.(Please note that this is very generic architecture kept very simple for inital assignments)
 
-!utils.py contains utility functions for plotting images that may be used as and when needed.
+## utils.py 
+contains utility functions for plotting images that may be used as and when needed.
 
-!Session_5.ipynb contains funtions from loading dataset to loading train/test loader, also for calling Model.py and utils.py, also to run main training and evaluation loop
+## Session_5.ipynb 
+contains funtions from loading dataset to loading train/test loader, also for calling Model.py and utils.py, also to run main training and evaluation loop
 
 We have trained model  on MNIST Dataset. The results are very good and we are able to achieve 99.52% accuracy on test data set within 20 epochs.
 Model has used around Total params: 593,200
