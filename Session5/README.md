@@ -12,10 +12,10 @@ contains funtions from loading dataset to loading train/test loader, also for ca
 We have trained model  on MNIST Dataset. The results are very good and we are able to achieve 99.52% accuracy on test data set within 20 epochs.
 Model has used around Total params: 593,200
 
-Follwing is detailed summary of Model
+## Follwing is detailed summary of Model
 ![Capture](https://github.com/gdeotale/ERA/assets/8176219/e2dca18d-b6ba-4bd4-83dd-0de99fb53b23)
 
-Following are accuracy numbers for final few epochs
+## Following are accuracy numbers for final few epochs
 Adjusting learning rate of group 0 to 1.0000e-03.
 Epoch 18
 Train: Loss=0.0031 Batch_id=117 Accuracy=99.15: 100%|██████████| 118/118 [00:23<00:00,  5.03it/s]
@@ -32,5 +32,5 @@ Train: Loss=0.0582 Batch_id=117 Accuracy=99.15: 100%|█████████
 Test set: Average loss: 0.0000, Accuracy: 59747/60000 (99.58%)
 
 
-Following is Train/Test accuracy and loss plot
+## Following is Train/Test accuracy and loss plot
 ![Plots](https://github.com/gdeotale/ERA/assets/8176219/81788eb1-ea56-442a-946f-41b682388b47)
