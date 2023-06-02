@@ -4,7 +4,7 @@ Following contains code from parts of assignment5
 contains model architecture that is used to train model.(Please note that this is very generic architecture kept very simple for inital assignments)
 
 ## utils.py 
-contains utility functions for plotting images that may be used as and when needed.
+contains utility functions for plotting images that may be used as and when needed. Also training and evaluations definition code have been added here. However i believe there should be separate file for this code.
 
 ## Session_5.ipynb 
 contains funtions from loading dataset to loading train/test loader, also for calling Model.py and utils.py, also to run main training and evaluation loop
