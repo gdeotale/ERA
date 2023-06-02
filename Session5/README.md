@@ -18,18 +18,18 @@ Model has used around Total params: 593,200
 ## Following are accuracy numbers for final few epochs
 Adjusting learning rate of group 0 to 1.0000e-03.
 Epoch 18
-Train: Loss=0.0031 Batch_id=117 Accuracy=99.15: 100%|██████████| 118/118 [00:23<00:00,  5.03it/s]
-Test set: Average loss: 0.0000, Accuracy: 59728/60000 (99.55%)
+Train: Loss=0.0397 Batch_id=117 Accuracy=99.06: 100%|██████████| 118/118 [00:22<00:00,  5.24it/s]
+Test set: Average loss: 0.0000, Accuracy: 59692/60000 (99.49%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 Epoch 19
-Train: Loss=0.0158 Batch_id=117 Accuracy=99.17: 100%|██████████| 118/118 [00:23<00:00,  4.95it/s]
-Test set: Average loss: 0.0000, Accuracy: 59732/60000 (99.55%)
+Train: Loss=0.0254 Batch_id=117 Accuracy=99.12: 100%|██████████| 118/118 [00:22<00:00,  5.16it/s]
+Test set: Average loss: 0.0000, Accuracy: 59711/60000 (99.52%)
 
 Adjusting learning rate of group 0 to 1.0000e-03.
 Epoch 20
-Train: Loss=0.0582 Batch_id=117 Accuracy=99.15: 100%|██████████| 118/118 [00:24<00:00,  4.86it/s]
-Test set: Average loss: 0.0000, Accuracy: 59747/60000 (99.58%)
+Train: Loss=0.0062 Batch_id=117 Accuracy=99.12: 100%|██████████| 118/118 [00:22<00:00,  5.14it/s]
+Test set: Average loss: 0.0000, Accuracy: 59701/60000 (99.50%)
 
 
 ## Following is Train/Test accuracy and loss plot
