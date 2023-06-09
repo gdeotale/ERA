@@ -8,6 +8,7 @@
 ![computation6](https://github.com/gdeotale/ERA/assets/8176219/9f5e0163-e081-4354-b21c-0ee499779fc7)
 
 ## Following is snippet of computations carried out in attached Backpropogation.csv
+Please refer to https://github.com/gdeotale/ERA/blob/main/Session6/BackPropagation.csv for detailed analysis
 ![computation7](https://github.com/gdeotale/ERA/assets/8176219/feb63f9a-182f-4fbf-97aa-2b73d8b489a5)
 
 ## Following are loss curves obtained for different values of lr
