@@ -1,3 +1,33 @@
+Following are parts of forward prop and backwardprop computation created on model shown below
+![nnimage](https://github.com/gdeotale/ERA/assets/8176219/d880875c-0f58-46af-8649-02383b59978b)
+
+Breaking computations for above in 6 steps
+![computation1](https://github.com/gdeotale/ERA/assets/8176219/8901543b-e020-48dc-9722-2df50f8c2d74)
+![computation23](https://github.com/gdeotale/ERA/assets/8176219/6f8cb9d4-06c3-48bb-b02c-e32cce166008)
+![computation45](https://github.com/gdeotale/ERA/assets/8176219/c8b8c449-4a64-4116-8a6d-93b07d12f5f0)
+![computation6](https://github.com/gdeotale/ERA/assets/8176219/9f5e0163-e081-4354-b21c-0ee499779fc7)
+
+Following is snippet of computations carried out in attached Backpropogation.csv
+![computation7](https://github.com/gdeotale/ERA/assets/8176219/feb63f9a-182f-4fbf-97aa-2b73d8b489a5)
+
+Following are loss curves obtained for different values of lr
+lr=0.1
+![0 1](https://github.com/gdeotale/ERA/assets/8176219/659e8700-4c71-44b3-8334-c561dc753cd1)
+lr=0.2
+![0 2](https://github.com/gdeotale/ERA/assets/8176219/371c1325-6956-46c7-8387-b7442b2cb7c5)
+lr=0.5
+![0 5](https://github.com/gdeotale/ERA/assets/8176219/83677c70-1c7b-4d06-ba94-91a854ac0c94)
+lr=0.8
+![0 8](https://github.com/gdeotale/ERA/assets/8176219/3a58d9b2-5a03-4e60-881f-6e99407a79be)
+lr=1
+![1](https://github.com/gdeotale/ERA/assets/8176219/29dd2540-3efa-4177-a8a1-e19d55d3c708)
+lr=10
+![10](https://github.com/gdeotale/ERA/assets/8176219/5bf296ca-8fee-4b03-972e-d65d4f667df3)
+lr=100
+![100](https://github.com/gdeotale/ERA/assets/8176219/ed6e2644-9d6c-40cf-8884-d6dde829a80d)
+lr=1000
+![1000](https://github.com/gdeotale/ERA/assets/8176219/4fb6c7f8-3bd7-41aa-9ad1-81f096b12e90)
+
 Following contains code from parts of assignment5
 
 ## model.py 
@@ -13,21 +43,13 @@ We have trained model  on MNIST Dataset. The results are very good and we are ab
 Model has used around Total params: 17,130
 
 ## Follwing is detailed summary of Model
-![Capture](https://github.com/gdeotale/ERA/assets/8176219/e2dca18d-b6ba-4bd4-83dd-0de99fb53b23)
+![Model](https://github.com/gdeotale/ERA/assets/8176219/17eaaafa-9d07-48d4-b334-c0dd7777acbc)
 
 ## Following are accuracy numbers for final few epochs
-0.001 17
-Train: Loss=0.0113 Batch_id=468 Accuracy=98.95: 100%|██████████| 469/469 [00:21<00:00, 21.58it/s]
-Test set: Average loss: 0.0001, Accuracy: 9947/10000 (99.47%)
-
-0.001 18
-Train: Loss=0.0059 Batch_id=468 Accuracy=98.97: 100%|██████████| 469/469 [00:22<00:00, 21.12it/s]
-Test set: Average loss: 0.0002, Accuracy: 9948/10000 (99.48%)
-
-0.001 19
-Train: Loss=0.0731 Batch_id=468 Accuracy=99.00: 100%|██████████| 469/469 [00:21<00:00, 21.38it/s]
-Test set: Average loss: 0.0001, Accuracy: 9955/10000 (99.55%)
+![train_iter](https://github.com/gdeotale/ERA/assets/8176219/483bafb5-1a99-49a5-9f49-8442825bf6e2)
 
 
 ## Following is Train/Test accuracy and loss plot
-![Plots](https://github.com/gdeotale/ERA/assets/8176219/81788eb1-ea56-442a-946f-41b682388b47)
+![Model](https://github.com/gdeotale/ERA/assets/8176219/f8d74223-a12d-4aff-8d78-0c2d6fa484ac)
+
+
