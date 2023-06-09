@@ -1,3 +1,4 @@
+# Part1
 ## Following are parts of forward prop and backwardprop computation created on model shown below
 ![nnimage](https://github.com/gdeotale/ERA/assets/8176219/d880875c-0f58-46af-8649-02383b59978b)
 
@@ -12,23 +13,10 @@ Please refer to https://github.com/gdeotale/ERA/blob/main/Session6/BackPropagati
 ![computation7](https://github.com/gdeotale/ERA/assets/8176219/feb63f9a-182f-4fbf-97aa-2b73d8b489a5)
 
 ## Following are loss curves obtained for different values of lr
-## lr=0.1
-![0 1](https://github.com/gdeotale/ERA/assets/8176219/659e8700-4c71-44b3-8334-c561dc753cd1)
-## lr=0.2
-![0 2](https://github.com/gdeotale/ERA/assets/8176219/371c1325-6956-46c7-8387-b7442b2cb7c5)
-## lr=0.5
-![0 5](https://github.com/gdeotale/ERA/assets/8176219/83677c70-1c7b-4d06-ba94-91a854ac0c94)
-## lr=0.8
-![0 8](https://github.com/gdeotale/ERA/assets/8176219/3a58d9b2-5a03-4e60-881f-6e99407a79be)
-## lr=1
-![1](https://github.com/gdeotale/ERA/assets/8176219/29dd2540-3efa-4177-a8a1-e19d55d3c708)
-## lr=10
-![10](https://github.com/gdeotale/ERA/assets/8176219/5bf296ca-8fee-4b03-972e-d65d4f667df3)
-## lr=100
-![100](https://github.com/gdeotale/ERA/assets/8176219/ed6e2644-9d6c-40cf-8884-d6dde829a80d)
-## lr=1000
-![1000](https://github.com/gdeotale/ERA/assets/8176219/4fb6c7f8-3bd7-41aa-9ad1-81f096b12e90)
+Consider name of Image as lr value
+![Capture](https://github.com/gdeotale/ERA/assets/8176219/3165d1c0-cdcc-40e1-9f02-d5a3c59c3e06)
 
+# Part2
 ## Following contains code from parts of assignment5
 
 ## model.py 
