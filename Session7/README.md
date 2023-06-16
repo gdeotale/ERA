@@ -1,4 +1,4 @@
-Code Block1:
+# Code Block1:
 Code 1:
 Target: getting basic skelton right
 Analysis: here i haven't kept any param count while building model, no batchnorm or augmentation or lr
