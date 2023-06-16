@@ -2,8 +2,10 @@
 ## Code 1:
 Target: 
 Getting basic skelton right
+
 Analysis: 
 here i haven't kept any param count while building model, no batchnorm or augmentation or lr
+
 Result:
 Total params: 2,147,472
 Despite all the non usage of params model is able to touch 99.06% test accuracy. following are results of 19th epoch
@@ -20,7 +22,6 @@ As expected with decreased number of parametes the accuracy of model does go for
 Model does seem to overfit here.
 
 Result:
-
 Total params: 7,720
 
 0.01 19
@@ -36,7 +37,6 @@ Analysis: Batch norm has been added after every convolution except for last FC l
 It does improve accuracy from 98.28% in previous to 99.20. However it results in overfitting. Also target accuracy has not been met.
 
 Result:
-
 Total params: 7,888
 0.01 18
 Train: Loss=0.0634 Batch_id=468 Accuracy=99.57: 100%|██████████| 469/469 [00:19<00:00, 24.50it/s]
