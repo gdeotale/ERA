@@ -3,8 +3,7 @@
 ## Here is summary of number of params
 ![Model](https://github.com/gdeotale/ERA/assets/8176219/e62f42e9-c3a5-45e1-b48d-aef23763cf49)
 
-#Layer Norm
-
+# Layer Norm
 ### Here is output of final few epochs
 ![layer_Capture](https://github.com/gdeotale/ERA/assets/8176219/7538d3b9-5332-4fc3-b87d-f6dde38abc12)
 ### Corresponding output curve
@@ -12,7 +11,7 @@
 ### Missed Images
 ![layer_miss](https://github.com/gdeotale/ERA/assets/8176219/b80226f4-a157-4773-95cb-151094888dea)
 
-#Batch Norm
+# Batch Norm
 ### Here is output of final few epochs
 ![BN_capture](https://github.com/gdeotale/ERA/assets/8176219/879e076d-a2bb-4a31-87a6-d6fbf02f9503)
 ### Corresponding output curve
@@ -20,7 +19,7 @@
 ### Missed Images
 ![bn_miss](https://github.com/gdeotale/ERA/assets/8176219/9a25409c-b5ec-422d-bc6c-43c8d7a3a3bd)
 
-#Group Norm
+# Group Norm
 ### Here is output of final few epochs
 ![group_Capture](https://github.com/gdeotale/ERA/assets/8176219/8fcc1dc9-17c3-42e2-a986-e824d8481134)
 ### Corresponding output curve
