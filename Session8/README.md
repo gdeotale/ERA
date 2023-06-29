@@ -1,6 +1,8 @@
 ## Cifar dataset samples
 ![Images](https://github.com/gdeotale/ERA/assets/8176219/320c6e43-6947-4920-9073-d818adfeb680)
 ## Here is summary of number of params
+Following is link of model [Model](https://github.com/gdeotale/ERA/blob/main/Session8/S8.ipynb)
+
 ![Model](https://github.com/gdeotale/ERA/assets/8176219/e62f42e9-c3a5-45e1-b48d-aef23763cf49)
 
 # Layer Norm
