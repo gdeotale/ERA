@@ -19,6 +19,19 @@ coarseDropout (max_holes = 1, max_height=16px, max_width=1, min_holes = 1, min_h
 
 ## Following are sample Cifar training images with augmentation
 ![trainimage](https://github.com/gdeotale/ERA/assets/8176219/c8f484ba-786e-4938-badb-6cc319e5d526)
+## Model Params
+================================================================
+Total params: 198,970
+Trainable params: 198,970
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 12.82
+Params size (MB): 0.76
+Estimated Total Size (MB): 13.60
+----------------------------------------------------------------
+## Following is snippet of final few epochs
+![Capture](https://github.com/gdeotale/ERA/assets/8176219/d5d6b7a1-de16-4e3f-90c2-3b9d0e126345)
 ## Following are train and val curves along with  learning rate
 ![curves](https://github.com/gdeotale/ERA/assets/8176219/c7912009-cc7d-461c-96e4-50805e2654b2)
 ## Misclassified images
