@@ -1,3 +1,25 @@
+# Assignment
+Change the dataset to CIFAR10
+
+Make this network:
+C1 C2 c3 P1 C3 C4 C5 c6 P2 C7 C8 C9 GAP C10
+
+Keep the parameter count less than 50000
+
+Try and add one layer to another
+
+Max Epochs is 20
+
+You are making 3 versions of the above code (in each case achieve above 70% accuracy):
+
+Network with Group Normalization
+
+Network with Layer Normalization
+
+Network with Batch Normalization
+
+Following is link of Notebook
+[Notebook](https://github.com/gdeotale/ERA/blob/main/Session8/S8.ipynb)
 ## Cifar dataset samples
 ![Images](https://github.com/gdeotale/ERA/assets/8176219/320c6e43-6947-4920-9073-d818adfeb680)
 ## Here is summary of number of params
