@@ -19,7 +19,7 @@ coarseDropout (max_holes = 1, max_height=16px, max_width=1, min_holes = 1, min_h
 ## Description
 Model has used around 198,970 params, i have used dilation twice instead of maxpool, apaart from that i have used strided convolution once instead of maxpool just to illustrate. Model is able to achieve 85.54 around 195-200 epoch and 86.8% accuracy around 295-300 epoch.
 Scheduler strategy is cyclic learning rate with triangular2 mode. Following is link to notebook
-[](https://github.com/gdeotale/ERA/blob/main/Session9/S9.ipynb)
+![Notebook](https://github.com/gdeotale/ERA/blob/main/Session9/S9.ipynb)
 
 ## Following are sample Cifar training images with augmentation
 ![trainimage](https://github.com/gdeotale/ERA/assets/8176219/c8f484ba-786e-4938-badb-6cc319e5d526)
