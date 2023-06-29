@@ -16,20 +16,13 @@ shiftScaleRotate
 coarseDropout (max_holes = 1, max_height=16px, max_width=1, min_holes = 1, min_height=16px, min_width=16px, fill_value=(mean of your dataset), mask_fill_value = None)
 
 7 achieve 85% accuracy, as many epochs as you want. Total Params to be less than 200k.
-
+## Description
+Model has used around 198,970 params, i have used dilation twice instead of maxpool, apaart from that i have used strided convolution once instead of maxpool just to illustrate. Model is able to achieve 85.54 around 195-200 epoch and 86.8% accuracy around 295-300 epoch.
+Scheduler strategy is cyclic learning rate with triangular2 mode.
 ## Following are sample Cifar training images with augmentation
 ![trainimage](https://github.com/gdeotale/ERA/assets/8176219/c8f484ba-786e-4938-badb-6cc319e5d526)
 ## Model Params
-================================================================
-Total params: 198,970
-Trainable params: 198,970
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.01
-Forward/backward pass size (MB): 12.82
-Params size (MB): 0.76
-Estimated Total Size (MB): 13.60
-----------------------------------------------------------------
+![Params](https://github.com/gdeotale/ERA/assets/8176219/b7a58e89-fd1d-4515-86b6-bf300bae1081)
 ## Following is snippet of final few epochs
 ![Capture](https://github.com/gdeotale/ERA/assets/8176219/d5d6b7a1-de16-4e3f-90c2-3b9d0e126345)
 ## Following are train and val curves along with  learning rate
