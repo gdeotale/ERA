@@ -26,6 +26,7 @@ Scheduler strategy is cyclic learning rate with triangular2 mode. Following is l
 ## Model Params
 Following is link to model
 [Model](https://github.com/gdeotale/ERA/blob/main/Session9/Net.py)
+
 ![Params](https://github.com/gdeotale/ERA/assets/8176219/b7a58e89-fd1d-4515-86b6-bf300bae1081)
 ## Following is snippet of final few epochs
 ![Capture](https://github.com/gdeotale/ERA/assets/8176219/d5d6b7a1-de16-4e3f-90c2-3b9d0e126345)
