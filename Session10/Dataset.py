@@ -6,7 +6,7 @@ from trainalbumentation import TrainAlbumentation
 from testalbumentation import TestAlbumentation
 
 # dataloader arguments - something you'll fetch these from cmdprmt
-dataloader_args = dict(shuffle=True, batch_size=128, num_workers=32, pin_memory=True) if torch.cuda.is_available() else dict(shuffle=True, batch_size=64)
+dataloader_args = dict(shuffle=True, batch_size=512, num_workers=32, pin_memory=True) if torch.cuda.is_available() else dict(shuffle=True, batch_size=512)
 
 trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
                                         download=True, transform=TrainAlbumentation())
