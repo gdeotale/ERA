@@ -5,6 +5,7 @@
 ## Lr finder curve to determine max_lr
 ![lr_finder](https://github.com/gdeotale/ERA/assets/8176219/a19b48b0-bb5d-4c69-900c-64a3425e2021)
 ## Model
+![net](https://github.com/gdeotale/ERA/assets/8176219/2e867147-e5dd-4676-8189-6fdbdc5b6db5)
 ![Screenshot (129)](https://github.com/gdeotale/ERA/assets/8176219/cdd6ad8c-c8cc-4b98-bea2-3a98d049e30b)
 
 ## Training/Testing accuracy
