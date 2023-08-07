@@ -7,7 +7,10 @@
 
 ## Training/Testing accuracy
 
-Able to achieve 91.01% in under 20 epochs
+Able to achieve 88.45% in under 25 epochs
+
+Following are tensorboard logs
+![tensorboardlogs](https://github.com/gdeotale/ERA/assets/8176219/f7047f0a-08fe-4363-9aea-53daf899d8db)
 
 ![Capture](https://github.com/gdeotale/ERA/assets/8176219/62422c77-e5c6-40c3-9a94-3548673edbd5)
 ## Training / Testing curves
