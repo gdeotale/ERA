@@ -1,0 +1,10 @@
+torch
+torchvision
+numpy 
+grad-cam
+tqdm
+albumentations
+pillow
+pytorch_lightning
+torch_lr_finder
+matplotlib
