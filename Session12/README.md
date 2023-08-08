@@ -1,5 +1,5 @@
-## Session 11 Assignment question
-![Assignment](https://github.com/gdeotale/ERA/assets/8176219/04bba35a-99e8-475e-98f8-6def65e22379)
+## Session 12 Assignment question
+![Assignment](https://github.com/gdeotale/ERA/assets/8176219/75c6d501-a222-46c1-8156-89a21874a260)
 ## Cifar training dataset sample
 ![Dataset](https://github.com/gdeotale/ERA/assets/8176219/9e557c36-7c06-4754-bd20-67a5798eaf96)
 ## Lr finder curve to determine max_lr
@@ -12,15 +12,15 @@ Able to achieve 88.45% in under 25 epochs
 Following are tensorboard logs
 ![tensorboardlogs](https://github.com/gdeotale/ERA/assets/8176219/f7047f0a-08fe-4363-9aea-53daf899d8db)
 
-![Capture](https://github.com/gdeotale/ERA/assets/8176219/62422c77-e5c6-40c3-9a94-3548673edbd5)
-## Training / Testing curves
-![accuracy_curve](https://github.com/gdeotale/ERA/assets/8176219/9b95cabe-73d6-4ff7-bc03-031de127ca4e)
+![Accuracy](https://github.com/gdeotale/ERA/assets/8176219/35aeffcb-8e6f-4f9f-8a06-e40c7ef68fab)
+
 ## Misclassified Images
-![misclassified](https://github.com/gdeotale/ERA/assets/8176219/c1abd944-20e6-43f7-b4f4-24bf2a4f9667)
-![misclassified_gradcam](https://github.com/gdeotale/ERA/assets/8176219/4457b25c-fd68-42be-abb5-f3dea7c522c3)
-## Classified images
-![classified](https://github.com/gdeotale/ERA/assets/8176219/4e6c38b4-e4b6-4657-9803-18d9fe6be48e)
-![classified_gradcam](https://github.com/gdeotale/ERA/assets/8176219/00d59840-ae6e-4ea9-a199-889a13a78ab7)
+![misclassified](https://github.com/gdeotale/ERA/assets/8176219/4a6ba615-5503-488b-976a-e4cb3e98dd44)
+## Misclassified gradcam(layer[-1])
+![misclassified_gradcam_-11](https://github.com/gdeotale/ERA/assets/8176219/db0f0e4b-42c5-47fe-a024-5a4deea426cb)
+## Misclassified gradcam(layer -2)
+![misclassified_gradcam_-1](https://github.com/gdeotale/ERA/assets/8176219/803fef45-e919-4566-8fef-6e458a42cad5)
+
 
 
 
