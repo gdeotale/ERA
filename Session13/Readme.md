@@ -4,6 +4,9 @@
 ## Training Notebook 
 https://github.com/gdeotale/ERA/blob/main/Session13/Session13.ipynb
 
+## Lightning model module
+https://github.com/gdeotale/ERA/blob/main/Session13/Model/Moduli.py
+
 ## lrfinder 
 ![lr_finder](https://github.com/gdeotale/ERA/assets/8176219/5cf3b18d-1125-4bd8-ab03-8b3db5912d13)
 
