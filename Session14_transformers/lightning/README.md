@@ -1,3 +1,9 @@
+## Assignment
+![Screenshot 2023-09-04 002643](https://github.com/gdeotale/ERA/assets/8176219/0e93990d-ce32-4dc5-a292-a28010d18c00)
+
+## Tensor Board
+![training_curve](https://github.com/gdeotale/ERA/assets/8176219/3f24258e-ce95-4e06-b0c7-63c052aec7d0)
+
 ## Logs
 
 Epoch 7/9  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5053/5053 0:22:01 • 0:00:00 4.65it/s loss: 4.1 v_num: 27 val_loss:    
