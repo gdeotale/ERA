@@ -4,6 +4,18 @@
 ## Tensor Board
 ![training_curve](https://github.com/gdeotale/ERA/assets/8176219/3f24258e-ce95-4e06-b0c7-63c052aec7d0)
 
+## Model
+┏━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━┓
+┃   ┃ Name    ┃ Type             ┃ Params ┃
+┡━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━┩
+│ 0 │ loss_fn │ CrossEntropyLoss │      0 │
+│ 1 │ model   │ Transformer      │ 75.1 M │
+└───┴─────────┴──────────────────┴────────┘
+Trainable params: 75.1 M                                                                                           
+Non-trainable params: 0                                                                                            
+Total params: 75.1 M                                                                                               
+Total estimated model params size (MB): 300    
+
 ## Logs
 
 Epoch 7/9  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5053/5053 0:22:01 • 0:00:00 4.65it/s loss: 4.1 v_num: 27 val_loss:    
