@@ -5,16 +5,7 @@
 ![training_curve](https://github.com/gdeotale/ERA/assets/8176219/3f24258e-ce95-4e06-b0c7-63c052aec7d0)
 
 ## Model
-┏━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━┓
-┃   ┃ Name    ┃ Type             ┃ Params ┃
-┡━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━┩
-│ 0 │ loss_fn │ CrossEntropyLoss │      0 │
-│ 1 │ model   │ Transformer      │ 75.1 M │
-└───┴─────────┴──────────────────┴────────┘
-Trainable params: 75.1 M                                                                                           
-Non-trainable params: 0                                                                                            
-Total params: 75.1 M                                                                                               
-Total estimated model params size (MB): 300    
+![Screenshot 2023-09-04 003115](https://github.com/gdeotale/ERA/assets/8176219/1e0ee2c9-5caf-4189-9dc2-8f3adeeef0ae)
 
 ## Logs
 
