@@ -107,12 +107,8 @@ class MultiHeadAttentionBlock(nn.Module):
         attention_scores = (query @ key.transpose (-2, -1)) / math.sqrt(d_k)
         if mask is not None:
         # Write a very low value (indicating -inf) to the positions where mask == 0
-<<<<<<< HEAD
             _MASKING_VALUE = -1e9 if attention_scores.dtype == torch.float32 else -1e4
             attention_scores.masked_fill_(mask == 0, _MASKING_VALUE)
-=======
-            attention_scores.masked_fill_(mask == 0, -1e9)
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
         attention_scores = attention_scores.softmax(dim=-1) # (batch, h, seq_len, seq_len) # Apply
         if dropout is not None:
             attention_scores = dropout(attention_scores)
@@ -231,11 +227,7 @@ class Transformer(nn.Module):
         # (batch, seq Jen, vocab_size)
         return self.projection_layer(x)
     
-<<<<<<< HEAD
 def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int, tgt_seq_len: int, d_model: int=512, N: int=6, h: int=32, dropout: float=0.1, d_ff: int=256) -> Transformer:
-=======
-def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int, tgt_seq_len: int, d_model: int=512, N: int=6, h: int=8, dropout: float=0.1, d_ff: int=2048) -> Transformer:
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     # Create the embedding layers
     src_embed = InputEmbeddings(d_model, src_vocab_size)
     tgt_embed = InputEmbeddings(d_model, tgt_vocab_size)
@@ -246,11 +238,7 @@ def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int
 
     # Create the encoder blocks
     encoder_blocks = [] 
-<<<<<<< HEAD
     for _ in range(N//2):
-=======
-    for _ in range(N):
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
         encoder_self_attention_block = MultiHeadAttentionBlock(d_model, h, dropout)
         feed_forward_block = FeedForwardBlock(d_model, d_ff, dropout)
         encoder_block = EncoderBlock(encoder_self_attention_block, feed_forward_block, dropout) 
@@ -258,17 +246,12 @@ def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int
         
     # Create the decoder blocks
     decoder_blocks = []
-<<<<<<< HEAD
     for _ in range(N//2):
-=======
-    for _ in range(N):
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
         decoder_self_attention_block = MultiHeadAttentionBlock(d_model, h, dropout) 
         decoder_cross_attention_block = MultiHeadAttentionBlock(d_model, h, dropout) 
         feed_forward_block = FeedForwardBlock(d_model, d_ff, dropout)
         decoder_block = DecoderBlock(decoder_self_attention_block, decoder_cross_attention_block, feed_forward_block, dropout)
         decoder_blocks.append(decoder_block)
-<<<<<<< HEAD
        
     ##Additional       
     e1, e2, e3 = encoder_blocks
@@ -279,12 +262,6 @@ def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int
     # Create the encoder and decoder
     encoder = Encoder(nn.ModuleList(encoder_blocks1))
     decoder = Decoder(nn.ModuleList(decoder_blocks1))
-=======
-
-    # Create the encoder and decoder
-    encoder = Encoder(nn.ModuleList(encoder_blocks))
-    decoder = Decoder(nn.ModuleList(decoder_blocks))
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
 
     # Create the projection laver
     projection_layer = ProjectionLayer(d_model, tgt_vocab_size)

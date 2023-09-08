@@ -145,30 +145,20 @@ def get_or_build_tokenizer (config, ds, lang):
 def get_ds (config) :
     # It only has the train split, so we divide it ourselves 
     ds_raw = load_dataset('opus_books', f"{config['lang_src']}-{config['lang_tgt']}", split='train')
-<<<<<<< HEAD
-=======
-    
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     # Build tokenizers
     ds_raw1 = []
     tokenizer_src = get_or_build_tokenizer(config, ds_raw, config['lang_src'])
     tokenizer_tgt = get_or_build_tokenizer(config, ds_raw, config['lang_tgt'])
-<<<<<<< HEAD
     
     # Sort the dataset by the length of src_text
     ds_raw = sorted(ds_raw, key=lambda x: len(tokenizer_src.encode(x['translation']['en']).ids))
-=======
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     for i in tqdm(range(len(ds_raw))):
         src_text = ds_raw[i]['translation']['en']
         tgt_text = ds_raw[i]['translation']['fr']
         if len(tokenizer_src.encode(src_text).ids)<=150 and len(tokenizer_src.encode(src_text).ids)>0:
           if len(src_text)+10>=len(tgt_text):
              ds_raw1.append(ds_raw[i])
-<<<<<<< HEAD
         
-=======
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     ds_raw = ds_raw1         
     # Keep 90% for training, 10% for validation
     train_ds_size = int(0.9 * len(ds_raw))
@@ -177,10 +167,7 @@ def get_ds (config) :
     
     train_ds = BilingualDataset(train_ds_raw, tokenizer_src, tokenizer_tgt, config['lang_src'], config['lang_tgt'], config['seq_len']) 
     val_ds = BilingualDataset(val_ds_raw, tokenizer_src, tokenizer_tgt, config['lang_src'], config['lang_tgt'], config['seq_len'])
-<<<<<<< HEAD
 
-=======
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
    
     # Find the maximum length of each sentence in the source and target sentence
     max_len_src = 0
@@ -195,23 +182,13 @@ def get_ds (config) :
     print(f'Max length of source sentence: {max_len_src}')
     print(f'Max length of target sentence: {max_len_tgt}')
     
-<<<<<<< HEAD
     train_dataloader = DataLoader(train_ds, batch_size=config['batch_size'], shuffle=True, collate_fn = collate_fn, num_workers = 8)
     val_dataloader = DataLoader(val_ds, batch_size=1, shuffle=True)
-=======
-    train_dataloader = DataLoader(train_ds, batch_size=config['batch_size'], shuffle=True, collate_fn = collate_fn)
-    val_dataloader = DataLoader(val_ds, batch_size=1, shuffle=True)
-    
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     return train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt
     
 def collate_fn(batch):
    encoder_input_max = max(x["encoder_str_length"] for x in batch) 
    decoder_input_max= max(x["decoder_str_length"] for x in batch)
-<<<<<<< HEAD
-=======
-   
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
    encoder_inputs=[] 
    decoder_inputs=[] 
    encoder_mask=[] 
@@ -227,41 +204,26 @@ def collate_fn(batch):
         label.append(b["label"][:decoder_input_max])
         src_text.append(b["src_text"]) 
         tgt_text.append(b["tgt_text"])
-<<<<<<< HEAD
    
    #print(torch.vstack(encoder_inputs).shape, torch.vstack(decoder_inputs).shape, torch.vstack(encoder_mask).shape, torch.vstack(decoder_mask).shape, torch.vstack(label).shape)
    return{
             "encoder_input": torch.vstack(encoder_inputs), 
             "decoder_input":torch.vstack(decoder_inputs), 
             "encoder_mask": torch.vstack(encoder_mask), 
-=======
-   return{
-            "encoder_input": torch.vstack (encoder_inputs), 
-            "decoder_input":torch.vstack(decoder_inputs), 
-            "encoder_mask": torch.vstack (encoder_mask), 
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
             "decoder_mask": torch.vstack(decoder_mask), 
             "label": torch.vstack(label),
             "src text":src_text,
             "tgt text":tgt_text,
             }
-<<<<<<< HEAD
 
 
-=======
-   
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
 def get_model(config, vocab_src_len, vocab_tgt_len):
     model = build_transformer(vocab_src_len, vocab_tgt_len, config['seq_len'], config['seq_len'], d_model=config['d_model'])
     return model
 
 def train_model(config):
     # Define the device
-<<<<<<< HEAD
     device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
-=======
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     print("Using device: ", device)
     
     # Make sure the weights folder exists
@@ -274,28 +236,17 @@ def train_model(config):
     
     optimizer = torch.optim.Adam(model.parameters(), lr=config['lr'], eps=1e-9)
 #Scheduler
-<<<<<<< HEAD
     EPOCHS=90
-=======
-    EPOCHS=18
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
     STEPS_PER_EPOCH=len(train_dataloader)
     MAX_LR=10**-3
     scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer,
                                                     max_lr=MAX_LR,
                                                     steps_per_epoch=STEPS_PER_EPOCH,
                                                     epochs=EPOCHS,
-<<<<<<< HEAD
                                                     pct_start=1/10 if EPOCHS != 1 else 0.5, #int(0.3*EPOCHS)/EPOCHS
                                                     div_factor=10,
                                                     three_phase=True,
                                                     final_div_factor=10,
-=======
-                                                    pct_start=int(0.3*EPOCHS)/EPOCHS if EPOCHS != 1 else 0.5,
-                                                    div_factor=100,
-                                                    three_phase=False,
-                                                    final_div_factor=100,
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
                                                     anneal_strategy="linear")
                                             
 
@@ -320,19 +271,13 @@ def train_model(config):
         model.train()
         batch_iterator = tqdm(train_dataloader, desc=f"Processing Epoch {epoch:02d}")
         for batch in batch_iterator:
-<<<<<<< HEAD
             
             optimizer.zero_grad(set_to_none=True)
             
-=======
-            optimizer.zero_grad(set_to_none=True)
-
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
             encoder_input = batch['encoder_input'].to(device) # (b, seq_1en)
             decoder_input = batch['decoder_input'].to(device) # (B, seq_len)
             encoder_mask = batch['encoder_mask'].to(device) # (B, 1, 1, seq_Len)
             decoder_mask = batch['decoder_mask'].to(device) #- (B, 1, seq Len, seq_len)
-<<<<<<< HEAD
             #print(encoder_input.shape, decoder_input.shape, encoder_mask.shape, decoder_mask.shape)
             # Run the tensors through the encoder, decoder and the projection layer
             with torch.cuda.amp.autocast():
@@ -348,26 +293,12 @@ def train_model(config):
 
               # Compute the loss using a simple cross entropy
               loss = loss_fn(proj_output.view(-1, tokenizer_tgt.get_vocab_size()), label.view(-1))
-=======
-
-            # Run the tensors through the encoder, decoder and the projection layer
-            encoder_output = model.encode(encoder_input, encoder_mask) # (B, sea_len, a _model)
-            decoder_output = model.decode(encoder_output, encoder_mask, decoder_input, decoder_mask)
-            proj_output = model.project(decoder_output) # (B, seqlen, vocab_size)
-
-            # Compare the output with the label
-            label = batch['label'].to(device) # (B, seq_len)
-
-            # Compute the loss using a simple cross entropy
-            loss = loss_fn(proj_output.view(-1, tokenizer_tgt.get_vocab_size()), label.view(-1))
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
             batch_iterator.set_postfix({"loss": f"{loss.item():6.3f}"})
 
             # log the loss
             writer.add_scalar('train loss', loss.item(), global_step)
             writer.flush()
 
-<<<<<<< HEAD
             scaler.scale(loss).backward()
             # Backpropogate the loss
             #loss.backward()
@@ -382,22 +313,6 @@ def train_model(config):
             #optimizer.step()
             
 
-=======
-            # Backpropogate the loss
-            #scaler.scale(loss).backward()
-            loss.backward()
-
-            # Update the weights
-            #scale= scaler.get_scale()
-            #scaler.step(optimizer)
-            #scaler.update()
-            optimizer.step()
-            #skip_lr_sched = (scale > scaler.get_scale()) 
-            #if not skip_1r_sched: 
-            scheduler.step()
-            #    lr.append(scheduler.get_last_lr())
-            
->>>>>>> c7eb749b95a4f1fc6c73933079a158a09a914ec1
             global_step +=1
 
         # Run validation at the end of every epoch
