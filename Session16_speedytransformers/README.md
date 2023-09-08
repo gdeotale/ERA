@@ -1,0 +1,7 @@
+![Screenshot 2023-09-08 132627](https://github.com/gdeotale/ERA/assets/8176219/6f3f894c-d390-46da-9e3d-f775f504af09)
+![Screenshot 2023-09-08 131159](https://github.com/gdeotale/ERA/assets/8176219/c88e1a8e-486d-4a2f-ae36-f11a4c545b8b)
+![Screenshot 2023-09-08 131045](https://github.com/gdeotale/ERA/assets/8176219/cd4f2ae4-b9a9-44ca-b95c-de3369a560e3)
+![Screenshot 2023-09-08 122459](https://github.com/gdeotale/ERA/assets/8176219/96d2c384-6313-4493-bd1d-d525a6447d08)
+![Screenshot 2023-09-08 122524](https://github.com/gdeotale/ERA/assets/8176219/540997da-691c-472a-ba84-5401321e3cf5)
+![Screenshot 2023-09-08 122540](https://github.com/gdeotale/ERA/assets/8176219/abdbf10d-d255-4570-a1f8-af0f26eac3cf)
+![Screenshot 2023-09-08 122441](https://github.com/gdeotale/ERA/assets/8176219/11bd784d-1500-4f25-a7b2-05cdf28dcd87)
