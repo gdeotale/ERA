@@ -1,4 +1,20 @@
 ![Screenshot 2023-09-08 132627](https://github.com/gdeotale/ERA/assets/8176219/6f3f894c-d390-46da-9e3d-f775f504af09)
+
+## Strategies followed to improvise accuracy and speed
+
+Speed improvement
+1. Batch size was increased from 8 to 32 and num_workers=8 were added in dataloader-> this resulted in major speed boost
+2. Mixed precision training was implemented using torch.cuda.amp.autocast() this gave further boost up in speed
+3. Weight sharing module was added
+    e1, e2, e3 = encoder_blocks
+    d1, d2, d3 = decoder_blocks
+    encoder_blocks1 = [e1, e2, e3, e3, e2, e1]
+    decoder_blocks1 = [d1, d2, d3, d3, d2, d1]
+4. the size of token was restricted to 150 in main.py
+
+Loss improvement
+1. Onecyle policy resulted in major boost in accuracy
+ 
 ## Logs till epoch 20
 ![Screenshot 2023-09-08 131159](https://github.com/gdeotale/ERA/assets/8176219/c88e1a8e-486d-4a2f-ae36-f11a4c545b8b)
 ## final few epochs
