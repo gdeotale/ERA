@@ -6,41 +6,14 @@ Share the link to a single repo where all 3 ipynb files can be found
 # BERT
 https://github.com/gdeotale/ERA/blob/main/Session17_bert_gpt_vit/Assignment/Bert_mix.ipynb
 
-it: 7500  | loss 4.32  | Δw: 8.771
-it: 7800  | loss 4.49  | Δw: 8.934
-it: 8100  | loss 4.37  | Δw: 9.165
-it: 8400  | loss 4.31  | Δw: 9.556
-it: 8700  | loss 4.29  | Δw: 9.689
-it: 9000  | loss 4.26  | Δw: 10.377
-it: 9300  | loss 4.26  | Δw: 10.787
-it: 9600  | loss 4.16  | Δw: 10.775
-it: 9900  | loss 4.27  | Δw: 11.493
+![Screenshot 2023-09-16 041004](https://github.com/gdeotale/ERA/assets/8176219/4b1084ed-cf82-4db6-ba5f-67644398f122)
 
 # GPT
 https://github.com/gdeotale/ERA/blob/main/Session17_bert_gpt_vit/Assignment/GPT_mix.ipynb
 
-step          0 | train loss 10.7195 | val loss 10.7112
-step        250 | train loss 2.4492 | val loss 6.5238
-step        500 | train loss 0.5321 | val loss 8.1349
-step        750 | train loss 0.2151 | val loss 9.0535
-step       1000 | train loss 0.1613 | val loss 9.6794
-step       1250 | train loss 0.1431 | val loss 9.8860
-step       1500 | train loss 0.1385 | val loss 10.0478
-step       1750 | train loss 0.1408 | val loss 10.1481
-step       2000 | train loss 0.1284 | val loss 10.6126
-step       2250 | train loss 0.1310 | val loss 10.6251
-step       2499 | train loss 0.1259 | val loss 10.4719
+![Screenshot 2023-09-16 040946](https://github.com/gdeotale/ERA/assets/8176219/8c885bff-eff6-42d4-847b-e397aace9aa0)
 
 # VIT
 https://github.com/gdeotale/ERA/blob/main/Session17_bert_gpt_vit/Assignment/VIT_mix.ipynb
 
-Epoch: 1 | train_loss: 2.3641 | train_acc: 0.4219 | test_loss: 2.9657 | test_acc: 0.1979
-Epoch: 2 | train_loss: 1.6035 | train_acc: 0.2891 | test_loss: 1.7658 | test_acc: 0.2604
-Epoch: 3 | train_loss: 1.3132 | train_acc: 0.2617 | test_loss: 1.4159 | test_acc: 0.2604
-Epoch: 4 | train_loss: 1.1457 | train_acc: 0.3945 | test_loss: 1.3856 | test_acc: 0.1979
-Epoch: 5 | train_loss: 1.2025 | train_acc: 0.3125 | test_loss: 1.3275 | test_acc: 0.2604
-Epoch: 6 | train_loss: 1.2530 | train_acc: 0.2969 | test_loss: 1.3836 | test_acc: 0.1979
-Epoch: 7 | train_loss: 1.2255 | train_acc: 0.3945 | test_loss: 1.0044 | test_acc: 0.5417
-Epoch: 8 | train_loss: 1.1677 | train_acc: 0.4062 | test_loss: 1.0097 | test_acc: 0.5417
-Epoch: 9 | train_loss: 1.1460 | train_acc: 0.2852 | test_loss: 1.2833 | test_acc: 0.1979
-Epoch: 10 | train_loss: 1.1346 | train_acc: 0.3984 | test_loss: 1.2276 | test_acc: 0.1979
+![Screenshot 2023-09-16 040955](https://github.com/gdeotale/ERA/assets/8176219/498ea4dc-6dcf-40a1-93fa-c8a8fb3f30ed)
