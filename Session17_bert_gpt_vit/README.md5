@@ -1,9 +1,9 @@
-#Instructions
+# Instructions
 Re-write the code in such a way that there is one transformer.py file that you can use to train all 3 model
 Share the last few log details for all 3 models (BERT, GPT and ViT)
 Share the link to a single repo where all 3 ipynb files can be found
 
-#BERT
+# BERT
 https://github.com/gdeotale/ERA/blob/main/Session17_bert_gpt_vit/Assignment/Bert_mix.ipynb
 
 it: 7500  | loss 4.32  | Δw: 8.771
@@ -16,7 +16,7 @@ it: 9300  | loss 4.26  | Δw: 10.787
 it: 9600  | loss 4.16  | Δw: 10.775
 it: 9900  | loss 4.27  | Δw: 11.493
 
-#GPT
+# GPT
 https://github.com/gdeotale/ERA/blob/main/Session17_bert_gpt_vit/Assignment/GPT_mix.ipynb
 
 step          0 | train loss 10.7195 | val loss 10.7112
@@ -31,7 +31,7 @@ step       2000 | train loss 0.1284 | val loss 10.6126
 step       2250 | train loss 0.1310 | val loss 10.6251
 step       2499 | train loss 0.1259 | val loss 10.4719
 
-#VIT
+# VIT
 https://github.com/gdeotale/ERA/blob/main/Session17_bert_gpt_vit/Assignment/VIT_mix.ipynb
 
 Epoch: 1 | train_loss: 2.3641 | train_acc: 0.4219 | test_loss: 2.9657 | test_acc: 0.1979
